@@ -1,0 +1,226 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   BonSSlot.com
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .header {
+            background-color: #1a1a1a;
+            padding: 10px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .icons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .icons i {
+            font-size: 20px;
+        }
+        .navbar {
+            background-color: #000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar input {
+            background-color: #333;
+            border: none;
+            padding: 5px;
+            color: #fff;
+            width: 100px; /* Set width for input fields */
+            min-width: 100px; /* Ensure input fields don't shrink too much */
+        }
+        .navbar button {
+            background-color: #e60000;
+            padding: 5px 10px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .main-banner {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-banner img {
+            width: 100%;
+            max-width: 800px;
+        }
+        .jackpot {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        .jackpot .amount {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #e60000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .games-section {
+            padding: 20px;
+        }
+        .games-section h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .games-section .games {
+            display: flex;
+            gap: 10px;
+            overflow-x: hidden;
+            white-space: nowrap;
+            animation: scroll-left 10s linear infinite;
+        }
+        .games-section .games img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .games-section .games .game {
+            text-align: center;
+            display: inline-block;
+        }
+        .games-section .games .game p {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header flex justify-between items-center">
+   <div class="logo">
+    BonsSlot.com
+   </div>
+   <div class="icons flex items-center">
+    <i class="fas fa-gem">
+    </i>
+    <i class="fas fa-comment">
+    </i>
+    <i class="fas fa-circle">
+    </i>
+   </div>
+  </div>
+  <div class="navbar flex justify-between items-center">
+   <div class="flex items-center gap-2">
+    <img alt="Flag" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/pqNSDeaeZZheWoeRt1r00Lf3k7Ag9gC3xLjtKmCyv1Jhfe91JA.jpg" width="20"/>
+    <input placeholder="Nama Pengguna" type="text"/>
+    <input placeholder="Kata Sandi" type="password"/>
+   </div>
+   <div class="flex items-center gap-2">
+    <button onclick="window.location.href='games.html'">
+     MASUK
+    </button>
+    <button onclick="window.location.href='daftar.html'">
+     DAFTAR
+    </button>
+   </div>
+  </div>
+  <div class="main-banner">
+   <img alt="Main Banner" height="200" src="https://storage.googleapis.com/a1aa/image/MMuylO44urL8MZJqHCQNccq3nzwpln1ipSsfoQvKksqDe7rTA.jpg" width="800"/>
+  </div>
+  <div class="jackpot">
+   <div class="amount">
+    10.323.844.972
+   </div>
+  </div>
+  <div class="games-section">
+   <h2>
+    Game Populer
+   </h2>
+   <div class="games flex">
+    <div class="game">
+     <img alt="Mahjong Wins" height="100" src="https://storage.googleapis.com/a1aa/image/MMB2Zk70laaGJJ96aZJ47sr4eBqn3bbFZvZ1Vyt3D2K9991JA.jpg" width="100"/>
+     <p>
+      Mahjong Wins
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Gates of Olympus" height="100" src="https://storage.googleapis.com/a1aa/image/AWsjfQKxxszVOSftmMe8tQlZ0iqzxisRcdNelOOcNfINfe91JA.jpg" width="100"/>
+     <p>
+      Gates of Olympus
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Le Pharaoh" height="100" src="https://storage.googleapis.com/a1aa/image/533yf4T5SiUOfE73BYDFgwZKYpzWyzpoUC1VdwxelKxC43XnA.jpg" width="100"/>
+     <p>
+      Le Pharaoh
+     </p>
+    </div>
+    <div class="game">
+     <img alt="SixSixSix" height="100" src="https://storage.googleapis.com/a1aa/image/ffzt8DSzcAjoNkV3pUvanEwCDglneSxiM8MPlFXUfIE4uvvOB.jpg" width="100"/>
+     <p>
+      SixSixSix
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Mahjong Wins 2" height="100" src="https://storage.googleapis.com/a1aa/image/1DeNuO9lF73mUiS6bwnaPqNvY1kRTvxGijeIzhOCzfag33XnA.jpg" width="100"/>
+     <p>
+      Mahjong Wins 2
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Slot88 Olympus" height="100" src="https://storage.googleapis.com/a1aa/image/hKSGYtea6l0ZVyTL8Zm27UqlS05scnVKZZtM0npG8bwBe7rTA.jpg" width="100"/>
+     <p>
+      Slot88 Olympus
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Lucky Neko" height="100" src="https://storage.googleapis.com/a1aa/image/4pHzRrfAkfsV5EryGPuKZbBay97ZxL6eu3YqhqIRAu7o33XnA.jpg" width="100"/>
+     <p>
+      Lucky Neko
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="games-section">
+   <h2>
+    New Games
+   </h2>
+   <div class="games flex">
+    <div class="game">
+     <img alt="Dragon Gold" height="100" src="https://storage.googleapis.com/a1aa/image/NmLK8QKwJuYxO1tB2rdIhKgT1nUUZ60CcFHygpWf24d5991JA.jpg" width="100"/>
+     <p>
+      Dragon Gold
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Wings of Luck" height="100" src="https://storage.googleapis.com/a1aa/image/Lkr6Jc2dUYpvLBMZRQzznKIIbnAflSxnGcFezAgoVof933XnA.jpg" width="100"/>
+     <p>
+      Wings of Luck
+     </p>
+    </div>
+    <div class="game">
+     <img alt="Mighty Panda" height="100" src="https://storage.googleapis.com/a1aa/image/B57DQ

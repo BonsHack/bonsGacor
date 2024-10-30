@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Deposit Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        function showQRCode() {
+            document.getElementById('qr-code').classList.remove('hidden');
+        }
+
+        function setActiveMethod(method) {
+            const methods = ['otomatis', 'qris', 'bank', 'emoney', 'pulsa'];
+            methods.forEach(m => {
+                document.getElementById(m).classList.remove('bg-red-700');
+                document.getElementById(m).classList.add('bg-gray-600');
+            });
+            document.getElementById(method).classList.remove('bg-gray-600');
+            document.getElementById(method).classList.add('bg-red-700');
+        }
+    </script>
+</head>
+<body class="bg-black text-white">
+    <div class="max-w-sm mx-auto p-4"> <!-- Adjusted container for mobile responsiveness -->
+        <!-- Header -->
+        <div class="flex justify-between items-center bg-gray-800 p-2 rounded">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-gem text-white"></i>
+                <span class="text-white"></span>
+                <i class="fas fa-comment-dots text-white"></i>
+                <i class="fas fa-bell text-white"></i>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-leaf text-white"></i>
+                <span class="text-white">100%Gacor</span>
+            </div>
+        </div>
+
+        <!-- URL Bar -->
+        <div class="bg-gray-700 p-2 rounded mt-2 flex items-center justify-between">
+            <span class="text-white">Bons.Slot/desk</span>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-home text-white"></i>
+                <i class="fas fa-plus text-white"></i>
+                <i class="fas fa-ellipsis-v text-white"></i>
+            </div>
+        </div>
+
+        <!-- Welcome Banner -->
+        <div class="bg-red-800 p-4 rounded mt-4 flex justify-between items-center">
+            <div>
+                <span class="text-red-500 font-bold">BONSSTORE</span>
+                <span class="text-white">Selamat Datang!</span>
+                <div class="flex space-x-2 mt-1">
+                    <span class="bg-gray-600 text-white px-2 py-1 rounded">EXP 0 / 25,000</span>
+                    <span class="bg-yellow-500 text-black px-2 py-1 rounded">LP 0</span>
+                </div>
+            </div>
+            <div class="text-right">
+                <button class="bg-red-600 text-white px-4 py-2 rounded">Detail >></button>
+                <div class="text-white mt-2">Saldo Dompet</div>
+                <div class="text-white">IDR 0.00</div>
+            </div>
+        </div>
+
+        <!-- Payment Method Section -->
+        <div class="bg-gray-800 p-4 rounded mt-4">
+            <div class="flex justify-between items-center">
+                <span class="text-white">Metode Pembayaran</span>
+                <a href="#" class="text-white">Riwayat Deposit</a>
+            </div>
+            <div class="grid grid-cols-2 gap-2 mt-2"> <!-- Changed to grid layout for better spacing -->
+                <button id="otomatis" class="bg-red-700 text-white px-4 py-2 rounded" onclick="setActiveMethod('otomatis')">Otomatis Qris/Ewallet</button>
+                <button id="qris" class="bg-gray-600 text-white px-4 py-2 rounded" onclick="setActiveMethod('qris')">QRIS</button>
+                <button id="bank" class="bg-gray-600 text-white px-4 py-2 rounded" onclick="setActiveMethod('bank')">Bank/VA</button>
+                <button id="emoney" class="bg-gray-600 text-white px-4 py-2 rounded" onclick="setActiveMethod('emoney')">E-Money</button>
+                <button id="pulsa" class="bg-gray-600 text-white px-4 py-2 rounded" onclick="setActiveMethod('pulsa')">Pulsa</button>
+            </div>
+        </div>
+
+        <!-- Deposit Form -->
+        <div class="bg-gray-900 p-4 rounded mt-4">
+            <h2 class="text-white text-center mb-4">Otomatis Bank/Ewallet</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-white mb-2" for="username">Username / UserID Member</label>
+                    <input class="w-full p-2 rounded bg-gray-700 text-white" type="text" id="username" value="bonstore">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-white mb-2" for="deposit">Nominal Deposit</label>
+                    <input class="w-full p-2 rounded bg-gray-700 text-white" type="number" id="deposit">
+                </div>
+                <button type="button" class="w-full bg-gray-700 text-white p-2 rounded" onclick="showQRCode()">Depo QR</button>
+            </form>
+            <div id="qr-code" class="hidden mt-4">
+                <img src="https://github.com/user-attachments/assets/07f97b22-520d-4438-a7ef-a717d8d30c4c" alt="QR Code for Deposit" class="mx-auto">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

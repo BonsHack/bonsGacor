@@ -1,0 +1,472 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   PG Slots
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background-color: #000;
+            padding: 10px;
+        }
+        .header img {
+            height: 40px;
+        }
+        .nav {
+            background-color: #111;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .nav a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .main-banner {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .main-banner img {
+            width: 100%;
+        }
+        .main-banner .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .main-banner .counter {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .main-banner .counter div {
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px;
+            margin: 2px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+        .game-section {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .game-section .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .game-section .tabs button {
+            background-color: #b30000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .game-section .tabs button.active {
+            background-color: #ff0000;
+        }
+        .game-section .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .game-section .search-bar input {
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+            width: 200px;
+        }
+        .game-section .search-bar button {
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+            border: none;
+            background-color: #ff0000;
+            color: white;
+            cursor: pointer;
+        }
+        .game-section .games {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .game-section .games .game {
+            background-color: #3a3a3a;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .game-section .games .game img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .game-section .games .game .title {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .game-section .games .game .rtp {
+            margin-top: 5px;
+            font-size: 0.8rem;
+            color: #00ff00;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header flex justify-between items-center">
+   <div class="flex items-center">
+    <i class="fas fa-gem text-white text-xl mr-2">
+    </i>
+    <span>
+     18.20
+    </span>
+   </div>
+   <div class="flex items-center">
+    <i class="fas fa-comment text-white text-xl mr-2">
+    </i>
+    <span>
+     1
+    </span>
+   </div>
+   <div class="flex items-center">
+    <i class="fas fa-battery-full text-white text-xl mr-2">
+    </i>
+   </div>
+  </div>
+  <div class="nav">
+   <a href="#">
+    HOT GAMES
+   </a>
+   <a href="#">
+    SLOTS
+   </a>
+   <a href="#">
+    LIVE CASINO
+   </a>
+   <a href="#">
+    TOGEL
+   </a>
+   <a href="#">
+    OLAHRAGA
+   </a>
+   <a href="#">
+    CRASH GAME
+   </a>
+   <a href="#">
+    ARCADE
+   </a>
+  </div>
+  <div class="main-banner">
+   <img alt="Main Banner Image" height="400" src="https://storage.googleapis.com/a1aa/image/gPD5MZfrGyU0GyqZeW82WSAg5y0pnBpWPv3uH1J9gOlnj8rTA.jpg" width="1200"/>
+   <div class="banner-text">
+    HIT YOUR
+   </div>
+   <div class="counter">
+    <div>
+     IDR
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     0
+    </div>
+    <div>
+     1
+    </div>
+    <div>
+     0
+    </div>
+   </div>
+  </div>
+  <div class="game-section">
+   <div class="tabs">
+    <button class="active">
+     SEMUA PERMAINAN
+    </button>
+    <button>
+     TOP 20
+    </button>
+    <button>
+     VIDEO SLOTS
+    </button>
+   </div>
+   <div class="search-bar">
+    <input placeholder="Cari Permainan" type="text"/>
+    <button>
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+   <div class="games">
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Mahjong Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/BaGUOk6XIQJmItTkf0gVENuPZvdiJZFCGBrapJKqKjqCSerTA.jpg" width="100"/>
+      <div class="title">
+       Mahjong
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Mahjong 2 Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/BF1H7tbcesQZJiKW2gg4CPoAZFslzCnCbeTaZWGTH4SfG5XnA.jpg" width="100"/>
+      <div class="title">
+       Mahjong 2
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Wild Bounty Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/eoU6bIW9uhTrPKek2DclwU0yXjPayjATUSZckSpx5effeIf1JA.jpg" width="100"/>
+      <div class="title">
+       Wild Bounty
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Wild Bandito Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/e8iEtC2MHFQMQiW9yxSwmetQN8dGWMgSUjxfeUef2rgO8If1JA.jpg" width="100"/>
+      <div class="title">
+       Wild Bandito
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Lucky Neko Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/3rJHy2Qo8lJ2EJ4qvOZfQ16aFUYp6bHZ4DUHer5OOC9Ak8rTA.jpg" width="100"/>
+      <div class="title">
+       Lucky Neko
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Treasure Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/O1wEjmzyOlY0MhZofjXsguJisexOYv7suHJgfHDeh8zOPyvOB.jpg" width="100"/>
+      <div class="title">
+       Treasure
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Ways of the Qilin Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/enKPKnz4Zr0sa6q0MRefnWCxLZkzoEgEU90Nen48RaBTPyvOB.jpg" width="100"/>
+      <div class="title">
+       Ways of the Qilin
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Gemstone Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/7rbPuvfboF3ASaC2bmDjUE29HxG89CwrU3ftCe2iDeznOyvOB.jpg" width="100"/>
+      <div class="title">
+       Gemstone
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Anubis Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/rL4JfcEbZ11Gfk71o7nV4N8cL8ApMoPbT38SUFYEm2thj8rTA.jpg" width="100"/>
+      <div class="title">
+       Anubis
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Jurassic Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/v2CRWw6Xeqztb6IccZoi0JUX0rVjbIropXKHcvusHpqfj8rTA.jpg" width="100"/>
+      <div class="title">
+       Jurassic
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Pinata Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/yApNKflTfLislkQn0W12mSUwKjK4VLIsPeh6gfZjuPEvNyvOB.jpg" width="100"/>
+      <div class="title">
+       Pinata
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Cocktail Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/mTK3f28ReOrRFUxF9gVrkx8Ca3477TqNfrp6zRCUDyoGH5XnA.jpg" width="100"/>
+      <div class="title">
+       Cocktail
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="The Great Icescape Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/NreAHuLvW5TdWS7mAcwAgmAYeeD3usmxi249moei9H61OyvOB.jpg" width="100"/>
+      <div class="title">
+       The Great Icescape
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Caishen Wins Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/QKmrreyoMG2zY6ginS5bYwewM5a9Qp9aZDcUG4BXnE54j8rTA.jpg" width="100"/>
+      <div class="title">
+       Caishen Wins
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Mafia Madness Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/oI4FTs7EhcKJL5fHPgG4dXGfupXnCLBgTVTfPPEMnHNLH5XnA.jpg" width="100"/>
+      <div class="title">
+       Mafia Madness
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Queen of Bounty Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/spKCbQcf420Fa60Xe85gwF3t6t9NAtm6cwoqJ68OMGN1j8rTA.jpg" width="100"/>
+      <div class="title">
+       Queen of Bounty
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Speed Winner Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/HSfbQhHoXnx0CyntTupfKrTqPfAjX7kyUNPs26eUHkKOQyvOB.jpg" width="100"/>
+      <div class="title">
+       Speed Winner
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Ganesha Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/no4bexKnq9S6MiBYI4Ad7sILToBPrnW4qjwL5aeXZfciH5XnA.jpg" width="100"/>
+      <div class="title">
+       Ganesha
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Dreams of Macau Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/bnYoZag7hXIfUiemxD2jcLXOxKoezW847vlYMTIg1UT4G5XnA.jpg" width="100"/>
+      <div class="title">
+       Dreams of Macau
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Prosperity Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/HneP9YwyXC2qBqUt6FW2pyeIWRD5BTocKSUBsIcswZaHk8rTA.jpg" width="100"/>
+      <div class="title">
+       Prosperity
+      </div>
+      <div class="rtp">
+       RTP 97%
+      </div>
+     </div>
+    </a>
+    <a href="topup.html">
+     <div class="game">
+      <img alt="Museum Game Image" height="100" src="https://storage.googleapis.com/a1aa/image/JvWpAjsPJfzOYCnLfyrz6JNY4doLTqbrjpwZjyDZhSdqj8rTA.jpg" width="100"/>
+      <div class="title">
+       Museum
+      </div>
+      <div class="rtp">
+       RTP 97%
+     
